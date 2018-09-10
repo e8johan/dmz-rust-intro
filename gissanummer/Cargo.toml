@@ -1,0 +1,8 @@
+[package]
+name = "gissanummer"
+version = "0.1.0"
+authors = ["Johan Thelin <e8johan@gmail.com>"]
+
+[dependencies]
+rand = "0.5.5"
+text_io = "0.1.7"
