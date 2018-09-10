@@ -1,0 +1,6 @@
+[package]
+name = "initialize-structure"
+version = "0.1.0"
+authors = ["Johan Thelin <e8johan@gmail.com>"]
+
+[dependencies]

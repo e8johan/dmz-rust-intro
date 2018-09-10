@@ -4,23 +4,18 @@ use rand::{thread_rng, Rng};
 #[macro_use] extern crate text_io;
 
 fn read_guess() -> u8 {
-    let mut result: u8 = 0;
-    
-    let mut done = false;
-    while !done {
+    loop {
         println!("Gissa ett nummer mellan 1 och 100:");
         let number: Result<u8, _> = try_read!();
         match number {
             Ok(n) => {
-                done = true;
-                result = n;
+                return n;
             },
             Err(_e) => {
                 println!("Nu förstår jag inte.");
             }
         };
     }
-    result
 }
 
 fn main() {
